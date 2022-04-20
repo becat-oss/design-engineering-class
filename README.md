@@ -9,4 +9,4 @@
 
 ### 1回目. 自己紹介/授業全体の説明
 
-### 2回目. Grasshopperに関する説明
+### 2回目. [Grasshopperに関する説明](https://github.com/katsuya0719/design-engineering-class/tree/main/class2_grasshopper)
