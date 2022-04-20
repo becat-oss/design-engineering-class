@@ -1,5 +1,5 @@
 ## （余裕ある人は）予習資料  
-[ghPythonに関する説明](https://developer.rhino3d.com/guides/rhinopython/your-first-python-script-in-grasshopper/)
+[ghPythonに関する説明](https://developer.rhino3d.com/guides/rhinopython/your-first-python-script-in-grasshopper/)  
 Grasshopper上でpythonを使うための説明が書いてあります。英語の練習だと思って読んでいくと力になること間違いなし。
 
 ## Grasshopperに関する質問  
