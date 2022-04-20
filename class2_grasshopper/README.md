@@ -10,7 +10,6 @@
 - 感度分析(sensitivity analysis)を行って設計者にどのパラメータが大事かを伝えたいとき  
 - 要件を聞いて、パラメータと目的変数が明確に定義できる場合（意外とできない場合が多い）で、時間に余裕があるとき  
 
-
 #### データツリーに関する説明  
 デルフト工科大学がいい説明資料を作っているので、[こちら](http://wiki.bk.tudelft.nl/toi-pedia/Basic_Data_Tree_Actions)を使いながら説明しようと思います。  
 
@@ -25,5 +24,11 @@ Grasshopperの全てのコンポーネントは操作する対象と動作（英
 pointでも、textでも、numberでもだめ。DecomposeBrepという動作はBrepという対象に対してのみ有効であるということ。  
 
 #### データの型に関する説明  
-それでは、対象にあたるデータの型を具体的に列挙しながら、
+データの型にあたるコンポーネントはParamsタブにまとまっています。(以下図参照)  
+
+それでは、対象にあたるデータの型を列挙しながら、[データ型説明](https://github.com/katsuya0719/design-engineering-class/blob/main/class2_grasshopper/%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B%E8%AA%AC%E6%98%8E.gh)を使って具体的に説明していきます。 
+
+#### rhinoscriptsyntaxに関する説明（時間が余ったら）  
+4-7回目の授業では、構造に関する解析をPythonも使いながら行う予定です。ですので、pythonをGrasshopper上で使用する流れをpython説明でちょっと説明しておこうと思います。（Python自体に関する説明は3回目に行います）  
+
 
