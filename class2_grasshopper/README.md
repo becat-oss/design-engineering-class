@@ -1,6 +1,9 @@
+## （余裕ある人は）予習資料  
+[ghPythonに関する説明](https://developer.rhino3d.com/guides/rhinopython/your-first-python-script-in-grasshopper/)
+Grasshopper上でpythonを使うための説明が書いてあります。英語の練習だと思って読んでいくと力になること間違いなし。
+
 ## Grasshopperに関する質問  
 #### Q. GraftとFlattenの理解が困難に感じました。GraftやFlattenをしてないと成立しない例を見てみたいです。  
-
 
 #### A. Grasshopperで扱うデータの型の種類とデータツリーについて説明した後に、データツリーの構造を変える(GraftやFlattenなど)必要があるケースを説明します。  
 
@@ -19,7 +22,7 @@
 Grasshopperの全てのコンポーネントは操作する対象と動作（英語でいうSとVの関係みたいな）のどちらかと考えるとシンプル。  
 動作は操作する対象に規定されるため、操作する対象のデータ型の特徴をつかんでしまえば、動作の部分は調べられるようになる（という持論）  
 
-#### 動作は対象に基底されるというのはどういうことか？  
+#### 動作は対象に規定されるというのはどういうことか？  
 例えば、DecomposeBrepというコンポーネントのinputをみると、Brepのアイコンが表示される。これはDecomposeBrepという動作はBrepという対象に対してのみ使えるということ。  
 pointでも、textでも、numberでもだめ。DecomposeBrepという動作はBrepという対象に対してのみ有効であるということ。  
 
@@ -28,7 +31,10 @@ pointでも、textでも、numberでもだめ。DecomposeBrepという動作はB
 
 それでは、対象にあたるデータの型を列挙しながら、[データ型説明](https://github.com/katsuya0719/design-engineering-class/blob/main/class2_grasshopper/%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B%E8%AA%AC%E6%98%8E.gh)を使って具体的に説明していきます。 
 
-#### rhinoscriptsyntaxに関する説明（時間が余ったら）  
-4-7回目の授業では、構造に関する解析をPythonも使いながら行う予定です。ですので、pythonをGrasshopper上で使用する流れをpython説明でちょっと説明しておこうと思います。（Python自体に関する説明は3回目に行います）  
+#### grasshopper上でPythonを使用する方法（時間が余ったら）  
+4-7回目の授業では、構造に関する解析をPythonも使いながら行う予定です。ですので、pythonをGrasshopper上で使用する流れを[python説明](https://github.com/katsuya0719/design-engineering-class/blob/main/class2_grasshopper/python%E8%AA%AC%E6%98%8E.gh)でちょっと説明しておこうと思います。（Python自体に関する説明は3回目に行います）  
+
+#### rhinoscriptsyntaxに関する説明  
+pythonを用いてRhinocerosの機能を使う際にはrhinoscriptsyntaxというライブラリを使います。[rhinoscriptsyntaxのドキュメント](https://developer.rhino3d.com/api/RhinoScriptSyntax/#surface)について軽く授業で説明します。  
 
 
