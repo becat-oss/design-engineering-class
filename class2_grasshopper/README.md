@@ -38,3 +38,7 @@ pointでも、textでも、numberでもだめ。DecomposeBrepという動作はB
 pythonを用いてRhinocerosの機能を使う際にはrhinoscriptsyntaxというライブラリを使います。[rhinoscriptsyntaxのドキュメント](https://developer.rhino3d.com/api/RhinoScriptSyntax/#surface)について軽く授業で説明します。  
 
 
+#### 次回に向けてgoogle colabの簡単な使い方説明  
+次回の授業では、google colabを使って授業を進めます。
+
+
