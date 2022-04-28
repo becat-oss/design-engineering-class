@@ -1,3 +1,8 @@
+## 来週に向けての予習課題  
+来週はKarambaを使って三橋先生に講義をしていただきます。  
+三橋先生が準備された[instruction](https://github.com/Tatsuru-Mihashi/design_engineering_structure/blob/main/install_Karamba.md)に沿って各自Karambaをインストールしておいてください。  
+
+
 ## Pythonに関する質問  
 
 Q. 
