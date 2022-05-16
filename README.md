@@ -14,5 +14,5 @@
 ### 3回目. [Pythonに関する説明](https://github.com/becat-oss/design-engineering-class/tree/main/class3_python). 
 
 ### 4回目. [構造の基本知識とKaramba基本](https://github.com/Tatsuru-Mihashi/design_engineering_structure/blob/main/exercise_s01.md).   
-4-7回目は非常勤の(三橋先生)[https://github.com/Tatsuru-Mihashi/design_engineering_structure]に担当いただいています。  
+4-7回目は非常勤の(三橋先生)[https://github.com/Tatsuru-Mihashi/design_engineering_structure] に担当いただいています。  
 
