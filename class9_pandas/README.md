@@ -3,12 +3,16 @@
 #### climate consultantとは?
 
 気象データを可視化するツールです。Ladybug&HoneybeeやclimateStudioで使われている湿り空気線図上の快適線プロットやヒートマップなどのビジュアルの元祖はここじゃないかと勝手に思っています。\
-[webサイト](https://www.sbse.org/resources/climate-consultant)からOSにあわせてインストーラをダウンロードしてください
+[webサイト](https://www.sbse.org/resources/climate-consultant)からOSにあわせてインストーラをダウンロードしてください  
+
+湿り空気線図上に全気象データをプロットするだけでなく、passive designの効果を定量的に分析することができます。  
+![psychrometric chart](./img/psychrometric_chart.png)  
 
 #### jupyter notebookを用いて、Python、pandasを使ってみる
 epwデータの分析を以下のような可視化をしながら分析します  
 ![monthly wind rose](./img/windrose.png)
 
+![psychro](./img/psychro.png)
 
 1. Pythonの環境を設定する\
    1-1. Anacondaをインストールする\
@@ -54,7 +58,11 @@ Excelでデータを扱うように、データ処理を行えるライブラリ
 様々なデータの可視化を行えるライブラリです
 
 [Windrose](https://hatarilabs.com/ih-en/how-to-make-a-wind-rose-with-python-tutorial)\
-Wind roseを表示できるライブラリです
+Wind roseを表示できるライブラリです  
+
+[psychrochart](https://github.com/azogue/psychrochart)  
+psychrochartは湿り空気線図を扱えるpythonライブラリです。 
+[kinotofuさんの記事](https://zenn.dev/kinonotofu/articles/210f2835d9a6e3)が日本語ソースで詳しく説明されていました。オリジナルの文献よりも細かく説明されているのでおすすめです。  
 
 データセット\
 [epwデータ](https://building-env.com/epw)\
