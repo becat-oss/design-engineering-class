@@ -12,7 +12,7 @@
 epwデータの分析を以下のような可視化をしながら分析します  
 ![monthly wind rose](./img/windrose.png)
 
-![psychro](./img/psychro.png)
+![psychro](./img/pschro.png)
 
 1. Pythonの環境を設定する\
    1-1. Anacondaをインストールする\
