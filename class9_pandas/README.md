@@ -37,7 +37,7 @@ conda env create -f=pandas_env.yml
 1-5. 以下のコマンドで2-3で作成した環境に入る
 
 ```
-activate class9_pandas
+activate pandas
 ```
 
 2. jupyter notebookを以下のコマンドで起動
