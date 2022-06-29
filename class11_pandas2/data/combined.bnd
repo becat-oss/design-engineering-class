@@ -1,0 +1,226 @@
+Program Version,EnergyPlus, Version 9.4.0-998c4b761e, YMD=2022.06.28 12:25
+! This file shows details about the branches, nodes, and other
+! elements of the flow connections.
+! This file is intended for use in "debugging" potential problems
+! that may also be detected by the program, but may be more easily
+! identified by "eye".
+! This file is also intended to support software which draws a
+! schematic diagram of the HVAC system.
+! ===============================================================
+! #Nodes,<Number of Unique Nodes>
+ #Nodes,30
+! <Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Node,1,0_ZONE1 ZONE AIR NODE,Air,0
+ Node,2,0_ZONE1 VRF SUPPLY INLET,Air,2
+ Node,3,0_ZONE1 VRF RETURN,Air,2
+ Node,4,0_ZONE1 RETURN OUTLET,Air,0
+ Node,5,0_ZONE2 ZONE AIR NODE,Air,0
+ Node,6,0_ZONE2 VRF SUPPLY INLET,Air,2
+ Node,7,0_ZONE2 VRF RETURN,Air,2
+ Node,8,0_ZONE2 RETURN OUTLET,Air,0
+ Node,9,1_ZONE1 ZONE AIR NODE,Air,0
+ Node,10,1_ZONE1 VRF SUPPLY INLET,Air,2
+ Node,11,1_ZONE1 VRF RETURN,Air,2
+ Node,12,1_ZONE1 RETURN OUTLET,Air,0
+ Node,13,0_ZONE1 VRF OUTDOOR AIR INLET,Air,1
+ Node,14,0_ZONE2 VRF OUTDOOR AIR INLET,Air,1
+ Node,15,1_ZONE1 VRF OUTDOOR AIR INLET,Air,1
+ Node,16,VRF_1_ZONE1 CONDENSER INLET NODE,Air,1
+ Node,17,VRF_0_ZONE1 CONDENSER INLET NODE,Air,1
+ Node,18,VRF_0_ZONE2 CONDENSER INLET NODE,Air,1
+ Node,19,0_ZONE1 VRF MIXED AIR OUTLET,Air,1
+ Node,20,0_ZONE1 VRF SUPPLY FAN OUTLET,Air,1
+ Node,21,0_ZONE2 VRF MIXED AIR OUTLET,Air,1
+ Node,22,0_ZONE2 VRF SUPPLY FAN OUTLET,Air,1
+ Node,23,1_ZONE1 VRF MIXED AIR OUTLET,Air,1
+ Node,24,1_ZONE1 VRF SUPPLY FAN OUTLET,Air,1
+ Node,25,0_ZONE1 VRF RELIEF AIR OUTLET,Air,0
+ Node,26,0_ZONE2 VRF RELIEF AIR OUTLET,Air,0
+ Node,27,1_ZONE1 VRF RELIEF AIR OUTLET,Air,0
+ Node,28,0_ZONE1 VRF COOLING COIL OUTLET,Air,1
+ Node,29,0_ZONE2 VRF COOLING COIL OUTLET,Air,1
+ Node,30,1_ZONE1 VRF COOLING COIL OUTLET,Air,1
+! ===============================================================
+! Suspicious nodes have 0 references.  It is normal for some nodes, however.
+! Listing nodes with 0 references (culled from previous list):
+! <Suspicious Node>,<NodeNumber>,<Node Name>,<Node Fluid Type>,<# Times Node Referenced After Definition>
+ Suspicious Node,1,0_ZONE1 ZONE AIR NODE,Air,0
+ Suspicious Node,4,0_ZONE1 RETURN OUTLET,Air,0
+ Suspicious Node,5,0_ZONE2 ZONE AIR NODE,Air,0
+ Suspicious Node,8,0_ZONE2 RETURN OUTLET,Air,0
+ Suspicious Node,9,1_ZONE1 ZONE AIR NODE,Air,0
+ Suspicious Node,12,1_ZONE1 RETURN OUTLET,Air,0
+ Suspicious Node,25,0_ZONE1 VRF RELIEF AIR OUTLET,Air,0
+ Suspicious Node,26,0_ZONE2 VRF RELIEF AIR OUTLET,Air,0
+ Suspicious Node,27,1_ZONE1 VRF RELIEF AIR OUTLET,Air,0
+! ===============================================================
+! <#Branch Lists>,<Number of Branch Lists>
+ #Branch Lists,0
+! <Branch List>,<Branch List Count>,<Branch List Name>,<Loop Name>,<Loop Type>,<Number of Branches>
+! <Branch>,<Branch Count>,<Branch Name>,<Loop Name>,<Loop Type>,<Branch Inlet Node Name>,<Branch Outlet Node Name>
+! ===============================================================
+! <#Supply Air Paths>,<Number of Supply Air Paths>
+ #Supply Air Paths,0
+! <Supply Air Path>,<Supply Air Path Count>,<Supply Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Supply Air Path>,<Number of Components>
+! <Supply Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Outlet Nodes on Supply Air Path Component>,<Number of Nodes>
+! <Supply Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+! ===============================================================
+! <#Return Air Paths>,<Number of Return Air Paths>
+ #Return Air Paths,0
+! <Return Air Path>,<Return Air Path Count>,<Return Air Path Name>,<AirLoopHVAC Name>
+! <#Components on Return Air Path>,<Number of Components>
+! <Return Air Path Component>,<Component Count>,<Component Type>,<Component Name>,<AirLoopHVAC Name>
+! <#Inlet Nodes on Return Air Path Component>,<Number of Nodes>
+! <Return Air Path Component Nodes>,<Node Count>,<Component Type>,<Component Name>,<Inlet Node Name>,<Outlet Node Name>,<AirLoopHVAC Name>
+! ===============================================================
+! #Outdoor Air Nodes,<Number of Outdoor Air Nodes>
+ #Outdoor Air Nodes,6
+! <Outdoor Air Node>,<NodeNumber>,<Node Name>
+ Outdoor Air Node,13,0_ZONE1 VRF OUTDOOR AIR INLET
+ Outdoor Air Node,14,0_ZONE2 VRF OUTDOOR AIR INLET
+ Outdoor Air Node,15,1_ZONE1 VRF OUTDOOR AIR INLET
+ Outdoor Air Node,16,VRF_1_ZONE1 CONDENSER INLET NODE
+ Outdoor Air Node,17,VRF_0_ZONE1 CONDENSER INLET NODE
+ Outdoor Air Node,18,VRF_0_ZONE2 CONDENSER INLET NODE
+! ===============================================================
+! <#Component Sets>,<Number of Component Sets>
+ #Component Sets,12
+! <Component Set>,<Component Set Count>,<Parent Object Type>,<Parent Object Name>,<Component Type>,<Component Name>,<Inlet Node ID>,<Outlet Node ID>,<Description>
+ Component Set,1,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF TERMINAL UNIT,FAN:ONOFF,0_ZONE1 VRF SUPPLY FAN,0_ZONE1 VRF MIXED AIR OUTLET,0_ZONE1 VRF SUPPLY FAN OUTLET,Air Nodes
+ Component Set,2,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF TERMINAL UNIT,FAN:ONOFF,0_ZONE2 VRF SUPPLY FAN,0_ZONE2 VRF MIXED AIR OUTLET,0_ZONE2 VRF SUPPLY FAN OUTLET,Air Nodes
+ Component Set,3,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF TERMINAL UNIT,FAN:ONOFF,1_ZONE1 VRF SUPPLY FAN,1_ZONE1 VRF MIXED AIR OUTLET,1_ZONE1 VRF SUPPLY FAN OUTLET,Air Nodes
+ Component Set,4,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF TERMINAL UNIT,OUTDOORAIR:MIXER,0_ZONE1 VRF OA MIXING BOX,0_ZONE1 VRF OUTDOOR AIR INLET,0_ZONE1 VRF MIXED AIR OUTLET,Air Nodes
+ Component Set,5,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF TERMINAL UNIT,OUTDOORAIR:MIXER,0_ZONE2 VRF OA MIXING BOX,0_ZONE2 VRF OUTDOOR AIR INLET,0_ZONE2 VRF MIXED AIR OUTLET,Air Nodes
+ Component Set,6,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF TERMINAL UNIT,OUTDOORAIR:MIXER,1_ZONE1 VRF OA MIXING BOX,1_ZONE1 VRF OUTDOOR AIR INLET,1_ZONE1 VRF MIXED AIR OUTLET,Air Nodes
+ Component Set,7,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF TERMINAL UNIT,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF COOLING COIL,0_ZONE1 VRF SUPPLY FAN OUTLET,0_ZONE1 VRF COOLING COIL OUTLET,Air Nodes
+ Component Set,8,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF TERMINAL UNIT,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF COOLING COIL,0_ZONE2 VRF SUPPLY FAN OUTLET,0_ZONE2 VRF COOLING COIL OUTLET,Air Nodes
+ Component Set,9,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF TERMINAL UNIT,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF COOLING COIL,1_ZONE1 VRF SUPPLY FAN OUTLET,1_ZONE1 VRF COOLING COIL OUTLET,Air Nodes
+ Component Set,10,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF TERMINAL UNIT,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF HEATING COIL,0_ZONE1 VRF COOLING COIL OUTLET,0_ZONE1 VRF SUPPLY INLET,Air Nodes
+ Component Set,11,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF TERMINAL UNIT,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF HEATING COIL,0_ZONE2 VRF COOLING COIL OUTLET,0_ZONE2 VRF SUPPLY INLET,Air Nodes
+ Component Set,12,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF TERMINAL UNIT,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF HEATING COIL,1_ZONE1 VRF COOLING COIL OUTLET,1_ZONE1 VRF SUPPLY INLET,Air Nodes
+! ===============================================================
+! <# Plant Loops>,<Number of Plant Loops>
+ #Plant Loops,0
+! <Plant Loop>,<Plant Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Plant Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Plant Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Plant Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Plant Loop Supply Connection>,<Plant Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Plant Loop Return Connection>,<Plant Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+! ===============================================================
+! <# Condenser Loops>,<Number of Condenser Loops>
+ #Condenser Loops,0
+! <Condenser Loop>,<Condenser Loop Name>,<Loop Type>,<Inlet Node Name>,<Outlet Node Name>,<Branch List>,<Connector List>
+! <Condenser Loop Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <Condenser Loop Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <Condenser Loop Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! <Condenser Loop Supply Connection>,<Condenser Loop Name>,<Supply Side Outlet Node Name>,<Demand Side Inlet Node Name>
+! <Condenser Loop Return Connection>,<Condenser Loop Name>,<Demand Side Outlet Node Name>,<Supply Side Inlet Node Name>
+! ===============================================================
+! <# Controlled Zones>,<Number of Controlled Zones>
+ #Controlled Zones,3
+! <Controlled Zone>,<Controlled Zone Name>,<Equip List Name>,<Control List Name>,<Zone Node Name>,<# Inlet Nodes>,<# Exhaust Nodes>,<# Return Nodes>
+! <Controlled Zone Inlet>,<Inlet Node Count>,<Controlled Zone Name>,<Supply Air Inlet Node Name>,<SD Sys:Cooling/Heating [DD:Cooling] Inlet Node Name>,<DD Sys:Heating Inlet Node Name>
+! <Controlled Zone Exhaust>,<Exhaust Node Count>,<Controlled Zone Name>,<Exhaust Air Node Name>
+ Controlled Zone,1_ZONE1,1_ZONE1 EQUIPMENT,,1_ZONE1 ZONE AIR NODE,1,1,1
+   Controlled Zone Inlet,1,1_ZONE1,1_ZONE1 VRF SUPPLY INLET,Undefined,N/A
+   Controlled Zone Exhaust,1,1_ZONE1,1_ZONE1 VRF RETURN
+   Controlled Zone Return,1,1_ZONE1,1_ZONE1 RETURN OUTLET
+ Controlled Zone,0_ZONE1,0_ZONE1 EQUIPMENT,,0_ZONE1 ZONE AIR NODE,1,1,1
+   Controlled Zone Inlet,1,0_ZONE1,0_ZONE1 VRF SUPPLY INLET,Undefined,N/A
+   Controlled Zone Exhaust,1,0_ZONE1,0_ZONE1 VRF RETURN
+   Controlled Zone Return,1,0_ZONE1,0_ZONE1 RETURN OUTLET
+ Controlled Zone,0_ZONE2,0_ZONE2 EQUIPMENT,,0_ZONE2 ZONE AIR NODE,1,1,1
+   Controlled Zone Inlet,1,0_ZONE2,0_ZONE2 VRF SUPPLY INLET,Undefined,N/A
+   Controlled Zone Exhaust,1,0_ZONE2,0_ZONE2 VRF RETURN
+   Controlled Zone Return,1,0_ZONE2,0_ZONE2 RETURN OUTLET
+! ===============================================================
+! <#Zone Equipment Lists>,<Number of Zone Equipment Lists>
+ #Zone Equipment Lists,3
+! <Zone Equipment List>,<Zone Equipment List Count>,<Zone Equipment List Name>,<Zone Name>,<Number of Components>
+! <Zone Equipment Component>,<Component Count>,<Component Type>,<Component Name>,<Zone Name>,<Heating Priority>,<Cooling Priority>
+ Zone Equipment List,1,1_ZONE1 EQUIPMENT,1_ZONE1,1
+   Zone Equipment Component,1,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF TERMINAL UNIT,1_ZONE1,1,1
+ Zone Equipment List,2,0_ZONE1 EQUIPMENT,0_ZONE1,1
+   Zone Equipment Component,1,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF TERMINAL UNIT,0_ZONE1,1,1
+ Zone Equipment List,3,0_ZONE2 EQUIPMENT,0_ZONE2,1
+   Zone Equipment Component,1,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF TERMINAL UNIT,0_ZONE2,1,1
+! ===============================================================
+! <#AirLoopHVACs>,<Number of AirLoopHVACs>
+ #AirLoopHVACs,0
+! <AirLoopHVAC>,<Air Loop Name>,<# Return Nodes>,<# Supply Nodes>,<# Zones Cooled>,<# Zones Heated>,<Outdoor Air Used>
+! <AirLoop Return Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Return Node #>,<Zn Eqp Return Node Name>,<AirLoop Return Node #>,<Air Loop Return Node Name>
+! <AirLoop Supply Connections>,<Connection Count>,<AirLoopHVAC Name>,<Zn Eqp Supply Node #>,<Zn Eqp Supply Node Name>,<AirLoop Supply Node #>,<Air Loop Supply Node Name>
+! <Cooled Zone Info>,<Cooled Zone Count>,<Cooled Zone Name>,<Cooled Zone Inlet Node #>,<Cooled Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Heated Zone Info>,<Heated Zone Count>,<Heated Zone Name>,<Heated Zone Inlet Node #>,<Heated Zone Inlet Node Name>,<AirLoopHVAC Name>
+! <Outdoor Air Connections>,<OA Inlet Node #>,<OA Return Air Inlet Node Name>,<OA Outlet Node #>,<OA Mixed Air Outlet Node Name>,<AirLoopHVAC Name>
+! <AirLoopHVAC Connector>,<Connector Type>,<Connector Name>,<Loop Name>,<Loop Type>,<Number of Inlets/Outlets>
+! <AirLoopHVAC Connector Branches>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Branch>,<Outlet Branch>,<Loop Name>,<Loop Type>
+! <AirLoopHVAC Connector Nodes>,<Connector Node Count>,<Connector Type>,<Connector Name>,<Inlet Node>,<Outlet Node>,<Loop Name>,<Loop Type>
+! ===============================================================
+! <#Parent Node Connections>,<Number of Parent Node Connections>
+ #Parent Node Connections,6
+! <Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Parent Node Connection,0_ZONE1 VRF RETURN,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF TERMINAL UNIT,Inlet,1
+ Parent Node Connection,0_ZONE1 VRF SUPPLY INLET,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF TERMINAL UNIT,Outlet,1
+ Parent Node Connection,0_ZONE2 VRF RETURN,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF TERMINAL UNIT,Inlet,1
+ Parent Node Connection,0_ZONE2 VRF SUPPLY INLET,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF TERMINAL UNIT,Outlet,1
+ Parent Node Connection,1_ZONE1 VRF RETURN,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF TERMINAL UNIT,Inlet,1
+ Parent Node Connection,1_ZONE1 VRF SUPPLY INLET,ZONEHVAC:TERMINALUNIT:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF TERMINAL UNIT,Outlet,1
+! ===============================================================
+! <#Non-Parent Node Connections>,<Number of Non-Parent Node Connections>
+ #Non-Parent Node Connections,51
+! <Non-Parent Node Connection>,<Node Name>,<Node ObjectType>,<Node ObjectName>,<Node ConnectionType>,<Node FluidStream>
+ Non-Parent Node Connection,0_ZONE1 ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE1,ZoneNode,1
+ Non-Parent Node Connection,0_ZONE1 VRF SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE1,ZoneInlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF RETURN,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE1,ZoneExhaust,1
+ Non-Parent Node Connection,0_ZONE1 RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE1,ZoneReturn,1
+ Non-Parent Node Connection,0_ZONE2 ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE2,ZoneNode,1
+ Non-Parent Node Connection,0_ZONE2 VRF SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE2,ZoneInlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF RETURN,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE2,ZoneExhaust,1
+ Non-Parent Node Connection,0_ZONE2 RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,0_ZONE2,ZoneReturn,1
+ Non-Parent Node Connection,1_ZONE1 ZONE AIR NODE,ZONEHVAC:EQUIPMENTCONNECTIONS,1_ZONE1,ZoneNode,1
+ Non-Parent Node Connection,1_ZONE1 VRF SUPPLY INLET,ZONEHVAC:EQUIPMENTCONNECTIONS,1_ZONE1,ZoneInlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF RETURN,ZONEHVAC:EQUIPMENTCONNECTIONS,1_ZONE1,ZoneExhaust,1
+ Non-Parent Node Connection,1_ZONE1 RETURN OUTLET,ZONEHVAC:EQUIPMENTCONNECTIONS,1_ZONE1,ZoneReturn,1
+ Non-Parent Node Connection,0_ZONE1 VRF OUTDOOR AIR INLET,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,1
+ Non-Parent Node Connection,0_ZONE2 VRF OUTDOOR AIR INLET,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,2
+ Non-Parent Node Connection,1_ZONE1 VRF OUTDOOR AIR INLET,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,3
+ Non-Parent Node Connection,VRF_1_ZONE1 CONDENSER INLET NODE,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,4
+ Non-Parent Node Connection,VRF_0_ZONE1 CONDENSER INLET NODE,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,5
+ Non-Parent Node Connection,VRF_0_ZONE2 CONDENSER INLET NODE,OUTDOORAIR:NODE,OutdoorAir:Node,OutdoorAir,6
+ Non-Parent Node Connection,VRF_1_ZONE1 CONDENSER INLET NODE,AIRCONDITIONER:VARIABLEREFRIGERANTFLOW,VRF_1_ZONE1 VRF HEAT PUMP,OutsideAirReference,1
+ Non-Parent Node Connection,VRF_0_ZONE1 CONDENSER INLET NODE,AIRCONDITIONER:VARIABLEREFRIGERANTFLOW,VRF_0_ZONE1 VRF HEAT PUMP,OutsideAirReference,1
+ Non-Parent Node Connection,VRF_0_ZONE2 CONDENSER INLET NODE,AIRCONDITIONER:VARIABLEREFRIGERANTFLOW,VRF_0_ZONE2 VRF HEAT PUMP,OutsideAirReference,1
+ Non-Parent Node Connection,0_ZONE1 VRF MIXED AIR OUTLET,FAN:ONOFF,0_ZONE1 VRF SUPPLY FAN,Inlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF SUPPLY FAN OUTLET,FAN:ONOFF,0_ZONE1 VRF SUPPLY FAN,Outlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF MIXED AIR OUTLET,FAN:ONOFF,0_ZONE2 VRF SUPPLY FAN,Inlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF SUPPLY FAN OUTLET,FAN:ONOFF,0_ZONE2 VRF SUPPLY FAN,Outlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF MIXED AIR OUTLET,FAN:ONOFF,1_ZONE1 VRF SUPPLY FAN,Inlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF SUPPLY FAN OUTLET,FAN:ONOFF,1_ZONE1 VRF SUPPLY FAN,Outlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF MIXED AIR OUTLET,OUTDOORAIR:MIXER,0_ZONE1 VRF OA MIXING BOX,Outlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF OUTDOOR AIR INLET,OUTDOORAIR:MIXER,0_ZONE1 VRF OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF RELIEF AIR OUTLET,OUTDOORAIR:MIXER,0_ZONE1 VRF OA MIXING BOX,ReliefAir,1
+ Non-Parent Node Connection,0_ZONE1 VRF RETURN,OUTDOORAIR:MIXER,0_ZONE1 VRF OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF MIXED AIR OUTLET,OUTDOORAIR:MIXER,0_ZONE2 VRF OA MIXING BOX,Outlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF OUTDOOR AIR INLET,OUTDOORAIR:MIXER,0_ZONE2 VRF OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF RELIEF AIR OUTLET,OUTDOORAIR:MIXER,0_ZONE2 VRF OA MIXING BOX,ReliefAir,1
+ Non-Parent Node Connection,0_ZONE2 VRF RETURN,OUTDOORAIR:MIXER,0_ZONE2 VRF OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF MIXED AIR OUTLET,OUTDOORAIR:MIXER,1_ZONE1 VRF OA MIXING BOX,Outlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF OUTDOOR AIR INLET,OUTDOORAIR:MIXER,1_ZONE1 VRF OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF RELIEF AIR OUTLET,OUTDOORAIR:MIXER,1_ZONE1 VRF OA MIXING BOX,ReliefAir,1
+ Non-Parent Node Connection,1_ZONE1 VRF RETURN,OUTDOORAIR:MIXER,1_ZONE1 VRF OA MIXING BOX,Inlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF SUPPLY FAN OUTLET,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF COOLING COIL,Inlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF COOLING COIL OUTLET,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF COOLING COIL,Outlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF SUPPLY FAN OUTLET,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF COOLING COIL,Inlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF COOLING COIL OUTLET,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF COOLING COIL,Outlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF SUPPLY FAN OUTLET,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF COOLING COIL,Inlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF COOLING COIL OUTLET,COIL:COOLING:DX:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF COOLING COIL,Outlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF COOLING COIL OUTLET,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF HEATING COIL,Inlet,1
+ Non-Parent Node Connection,0_ZONE1 VRF SUPPLY INLET,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE1 VRF HEATING COIL,Outlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF COOLING COIL OUTLET,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF HEATING COIL,Inlet,1
+ Non-Parent Node Connection,0_ZONE2 VRF SUPPLY INLET,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,0_ZONE2 VRF HEATING COIL,Outlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF COOLING COIL OUTLET,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF HEATING COIL,Inlet,1
+ Non-Parent Node Connection,1_ZONE1 VRF SUPPLY INLET,COIL:HEATING:DX:VARIABLEREFRIGERANTFLOW,1_ZONE1 VRF HEATING COIL,Outlet,1

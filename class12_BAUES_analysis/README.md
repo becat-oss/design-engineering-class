@@ -1,4 +1,4 @@
-### デザインエンジニアリング特論第10回 BAUES Analysis
+### デザインエンジニアリング特論第12回 BAUES Analysis
 
 #### BAUES Analysisとは?
 

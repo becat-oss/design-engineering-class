@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<svg width="250mm" height="200mm" viewBox="0 0   2500    1500"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events">
+<g font-family="Verdana" font-size="8" >
+  <line x1="   300" y1="   270" x2="   300" y2="   350" style = "stroke:silver  ;"/>
+  <line x1="   300" y1="   270" x2="   300" y2="   430" style = "stroke:silver  ;"/>
+  <line x1="   300" y1="   350" x2="   300" y2="   430" style = "stroke:silver  ;"/>
+  <rect x="  1200" y="    20" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>     1
+  <text x="  1202" y="    33">0_ZONE1</text>
+  <rect x="   200" y="   260" width="   200" height="    20" style = "fill:snow; stroke: Black;"/>     4
+  <text x="   202" y="   273">OutdoorAir:Node</text>
+  <rect x="   200" y="   340" width="   200" height="    20" style = "fill:snow; stroke: Black;"/>     5
+  <text x="   202" y="   353">OutdoorAir:Node</text>
+  <rect x="   200" y="   420" width="   200" height="    20" style = "fill:snow; stroke: Black;"/>     6
+  <text x="   202" y="   433">OutdoorAir:Node</text>
+  <rect x="   450" y="    20" width="   200" height="    20" style = "fill:silver; stroke: Black;"/>    13
+  <text x="   452" y="    33">0_ZONE1 VRF SUPPLY FAN</text>
+  <rect x="   450" y="   100" width="   200" height="    20" style = "fill:silver; stroke: Black;"/>    14
+  <text x="   452" y="   113">0_ZONE2 VRF SUPPLY FAN</text>
+  <rect x="   450" y="   180" width="   200" height="    20" style = "fill:silver; stroke: Black;"/>    15
+  <text x="   452" y="   193">1_ZONE1 VRF SUPPLY FAN</text>
+  <rect x="   200" y="    20" width="   200" height="    20" style = "fill:lawngreen; stroke: Black;"/>    16
+  <text x="   202" y="    33">0_ZONE1 VRF OA MIXING BOX</text>
+  <rect x="   200" y="   100" width="   200" height="    20" style = "fill:lawngreen; stroke: Black;"/>    17
+  <text x="   202" y="   113">0_ZONE2 VRF OA MIXING BOX</text>
+  <rect x="   200" y="   180" width="   200" height="    20" style = "fill:lawngreen; stroke: Black;"/>    18
+  <text x="   202" y="   193">1_ZONE1 VRF OA MIXING BOX</text>
+  <rect x="   700" y="    20" width="   200" height="    20" style = "fill:aliceblue; stroke: Black;"/>    19
+  <text x="   702" y="    33">0_ZONE1 VRF COOLING COIL</text>
+  <rect x="   700" y="   100" width="   200" height="    20" style = "fill:aliceblue; stroke: Black;"/>    20
+  <text x="   702" y="   113">0_ZONE2 VRF COOLING COIL</text>
+  <rect x="   700" y="   180" width="   200" height="    20" style = "fill:aliceblue; stroke: Black;"/>    21
+  <text x="   702" y="   193">1_ZONE1 VRF COOLING COIL</text>
+  <rect x="   950" y="    20" width="   200" height="    20" style = "fill:aliceblue; stroke: Black;"/>    22
+  <text x="   952" y="    33">0_ZONE1 VRF HEATING COIL</text>
+  <rect x="   950" y="   100" width="   200" height="    20" style = "fill:aliceblue; stroke: Black;"/>    23
+  <text x="   952" y="   113">0_ZONE2 VRF HEATING COIL</text>
+  <rect x="   950" y="   180" width="   200" height="    20" style = "fill:aliceblue; stroke: Black;"/>    24
+  <text x="   952" y="   193">1_ZONE1 VRF HEATING COIL</text>
+  <rect x="  1200" y="   100" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>    25
+  <text x="  1202" y="   113">0_ZONE2</text>
+  <rect x="  1200" y="   180" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>    26
+  <text x="  1202" y="   193">1_ZONE1</text>
+  <line x1="   650" y1="    30" x2="   700" y2="    30" style = "stroke: Black;"/>
+  <line x1="   650" y1="   110" x2="   700" y2="   110" style = "stroke: Black;"/>
+  <line x1="   650" y1="   190" x2="   700" y2="   190" style = "stroke: Black;"/>
+  <line x1="   400" y1="    30" x2="   450" y2="    30" style = "stroke: Black;"/>
+  <line x1="   400" y1="   110" x2="   450" y2="   110" style = "stroke: Black;"/>
+  <line x1="   400" y1="   190" x2="   450" y2="   190" style = "stroke: Black;"/>
+  <line x1="   900" y1="    30" x2="   950" y2="    30" style = "stroke: Black;"/>
+  <line x1="   900" y1="   110" x2="   950" y2="   110" style = "stroke: Black;"/>
+  <line x1="   900" y1="   190" x2="   950" y2="   190" style = "stroke: Black;"/>
+  <line x1="  1150" y1="    30" x2="  1200" y2="    30" style = "stroke: Black;"/>
+  <line x1="  1150" y1="   110" x2="  1200" y2="   110" style = "stroke: Black;"/>
+  <line x1="  1150" y1="   190" x2="  1200" y2="   190" style = "stroke: Black;"/>
+  <line x1="   200" y1="    30" x2="   175" y2="    30" style = "stroke: Black;"/>
+  <line x1="   175" y1="    30" x2="   175" y2="     0" style = "stroke: Black;"/>
+  <line x1="   175" y1="     0" x2="  1425" y2="     0" style = "stroke: Black;"/>
+  <line x1="  1425" y1="     0" x2="  1425" y2="    30" style = "stroke: Black;"/>
+  <line x1="  1425" y1="    30" x2="  1400" y2="    30" style = "stroke: Black;"/>
+  <line x1="   200" y1="   110" x2="   175" y2="   110" style = "stroke: Black;"/>
+  <line x1="   175" y1="   110" x2="   175" y2="    80" style = "stroke: Black;"/>
+  <line x1="   175" y1="    80" x2="  1425" y2="    80" style = "stroke: Black;"/>
+  <line x1="  1425" y1="    80" x2="  1425" y2="   110" style = "stroke: Black;"/>
+  <line x1="  1425" y1="   110" x2="  1400" y2="   110" style = "stroke: Black;"/>
+  <line x1="   200" y1="   190" x2="   175" y2="   190" style = "stroke: Black;"/>
+  <line x1="   175" y1="   190" x2="   175" y2="   160" style = "stroke: Black;"/>
+  <line x1="   175" y1="   160" x2="  1425" y2="   160" style = "stroke: Black;"/>
+  <line x1="  1425" y1="   160" x2="  1425" y2="   190" style = "stroke: Black;"/>
+  <line x1="  1425" y1="   190" x2="  1400" y2="   190" style = "stroke: Black;"/>
+  <text x="   200" y="   480">Unused Non-Parent Objects:</text>
+  <text x="   220" y="   500">VRF_1_ZONE1 VRF HEAT PUMP</text>
+  <text x="   220" y="   520">VRF_0_ZONE1 VRF HEAT PUMP</text>
+  <text x="   220" y="   540">VRF_0_ZONE2 VRF HEAT PUMP</text>
+  <text x="   200" y="   580">
+The following are not supported: objects related to controls or ZoneHVAC:IdealLoadsAirSystem</text>
+</g>
+</svg>

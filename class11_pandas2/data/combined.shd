@@ -1,0 +1,215 @@
+Shadowing Combinations
+..Solar Distribution=FullExterior
+..In the following, only the first 10 reference surfaces will be shown.
+..But all surfaces are used in the calculations.
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0002
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001 WINDOW
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0002 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0002 WINDOW
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0002 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0002
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003 WINDOW
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0002
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004 WINDOW
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 FLOOR 0001_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 1_ZONE1 STOREY 0 ROOF 0001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0001 WINDOW
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0001 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0002 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0002 WINDOW
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0002 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0004 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0004 WINDOW
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0004 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0003_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0003
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0003_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 FLOOR 0001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE1 STOREY 0 CEILING 0001_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=9
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004
+..Surface=BLOCK 1_ZONE1 STOREY 0 FLOOR 0001_1
+..Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0003_1
+..Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0003_2
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0003
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0004_1
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0004_2
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001 WINDOW
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=10
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004
+..Surface=BLOCK 1_ZONE1 STOREY 0 FLOOR 0001_1
+..Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0003_1
+..Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0003_2
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0003
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0004_1
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0004_2
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002 WINDOW
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0003 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=7
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004
+..Surface=BLOCK 1_ZONE1 STOREY 0 FLOOR 0001_1
+..Surface=BLOCK 0_ZONE1 STOREY 0 WALL 0003_1
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0004_1
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0003 WINDOW
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0003 WINDOW is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0004_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0003
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0004_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0001
+..Surface=BLOCK 0_ZONE2 STOREY 0 WALL 0002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 FLOOR 0001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BLOCK 0_ZONE2 STOREY 0 CEILING 0001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0001
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0003
+..Surface=BLOCK 1_ZONE1 STOREY 0 WALL 0004
+Number of back surfaces=0
+Number of receiving sub surfaces=0

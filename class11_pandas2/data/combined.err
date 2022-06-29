@@ -1,0 +1,119 @@
+Program Version,EnergyPlus, Version 9.4.0-998c4b761e, YMD=2022.06.28 12:25,
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** RunPeriod: object=CUSTOMRUN, start weekday (MONDAY) does not match the start year (2020), corrected to WEDNESDAY.
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=ABIKO JPN
+   **   ~~~   ** ..Weather File Location=Fukuoka Fukuoka JPN TMY2-47807 WMO#=478070
+   **   ~~~   ** ..due to location differences, Latitude difference=[2.27] degrees, Longitude difference=[9.63] degrees.
+   **   ~~~   ** ..Time Zone difference=[0.0] hour(s), Elevation difference=[85.00] percent, [17.00] meters.
+   ** Warning ** GlobalGeometryRules: Potential mismatch of coordinate specifications.
+   **   ~~~   ** Coordinate System="RELATIVE"; while 
+   **   ~~~   ** Daylighting Reference Point Coordinate System="WORLD".
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="BLOCK 1_ZONE1 STOREY 0 ROOF 0001", in Zone="1_ZONE1".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=BLOCK 0_ZONE1 STOREY 0 FLOOR 0001
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** GetVertices: Floor is upside down! Tilt angle=[0.0], should be near 180, Surface="BLOCK 0_ZONE2 STOREY 0 FLOOR 0001", in Zone="0_ZONE2".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="BLOCK 0_ZONE2 STOREY 0 CEILING 0001", in Zone="0_ZONE2".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetVertices: Floor is upside down! Tilt angle=[0.0], should be near 180, Surface="BLOCK 1_ZONE1 STOREY 0 FLOOR 0001_1", in Zone="1_ZONE1".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** Indicated Zone Volume <= 0.0 for Zone=1_ZONE1
+   **   ~~~   ** The calculated Zone Volume was=-64.00
+   **   ~~~   ** The simulation will continue with the Zone Volume set to 10.0 m3. 
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.
+   ** Warning ** CalculateZoneVolume: 1 zone is not fully enclosed. For more details use:  Output:Diagnostics,DisplayExtrawarnings; 
+   ** Warning ** CheckUsedConstructions: There are 26 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** ShadowCalculation: suspect Shading Calculation Update Frequency
+   **   ~~~   ** Value entered=[3000], Shadowing Calculations will be inaccurate.
+   ** Warning ** GetVRFInput: AirConditioner:VariableRefrigerantFlow="VRF_1_ZONE1 VRF HEAT PUMP" curve values
+   **   ~~~   ** ... Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name = VRF_1_ZONE1 VRFCOOLCAPFT output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 1.136
+   ** Warning ** GetVRFInput: AirConditioner:VariableRefrigerantFlow="VRF_0_ZONE1 VRF HEAT PUMP" curve values
+   **   ~~~   ** ... Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name = VRF_0_ZONE1 VRFCOOLCAPFT output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 1.136
+   ** Warning ** GetVRFInput: AirConditioner:VariableRefrigerantFlow="VRF_0_ZONE2 VRF HEAT PUMP" curve values
+   **   ~~~   ** ... Cooling Capacity Ratio Modifier Function of Low Temperature Curve Name = VRF_0_ZONE2 VRFCOOLCAPFT output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 1.136
+   ** Warning ** GetDXCoils: Coil:Cooling:DX:VariableRefrigerantFlow="0_ZONE1 VRF COOLING COIL" curve values
+   **   ~~~   ** ... Cooling Capacity Ratio Modifier Function of Temperature Curve Name = 0_ZONE1 VRF COOLING COIL CAP-FT output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 1.136
+   ** Warning ** GetDXCoils: Coil:Cooling:DX:VariableRefrigerantFlow="0_ZONE2 VRF COOLING COIL" curve values
+   **   ~~~   ** ... Cooling Capacity Ratio Modifier Function of Temperature Curve Name = 0_ZONE2 VRF COOLING COIL CAP-FT output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 1.136
+   ** Warning ** GetDXCoils: Coil:Cooling:DX:VariableRefrigerantFlow="1_ZONE1 VRF COOLING COIL" curve values
+   **   ~~~   ** ... Cooling Capacity Ratio Modifier Function of Temperature Curve Name = 1_ZONE1 VRF COOLING COIL CAP-FT output is not equal to 1.0 (+ or - 10%) at rated conditions.
+   **   ~~~   ** ... Curve output at rated conditions = 1.136
+   ** Warning ** ManageSizing: For a plant sizing run, there must be at least 1 Sizing:Plant object input. SimulationControl Plant Sizing option ignored.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** AirConditioner:VariableRefrigerantFlow "VRF_0_ZONE1 VRF HEAT PUMP".
+   **   ~~~   ** ...InitVRF: VRF Heat Pump Min/Max Operating Temperature in Heating Mode Limits have been exceeded and VRF system is disabled.
+   **   ~~~   ** ... Outdoor Unit Inlet Air Temperature             = 16.433
+   **   ~~~   ** ... Heating Minimum Outdoor Unit Inlet Temperature = -19.999
+   **   ~~~   ** ... Heating Maximum Outdoor Unit Inlet Temperature = 16.000
+   **   ~~~   ** ... Check VRF Heat Pump Min/Max Outdoor Temperature in Heating Mode limits.
+   **   ~~~   **  During Warmup, Environment=CUSTOMRUN, at Simulation time=01/01 16:40 - 16:50
+   ** Warning ** AirConditioner:VariableRefrigerantFlow "VRF_0_ZONE2 VRF HEAT PUMP".
+   **   ~~~   ** ...InitVRF: VRF Heat Pump Min/Max Operating Temperature in Heating Mode Limits have been exceeded and VRF system is disabled.
+   **   ~~~   ** ... Outdoor Unit Inlet Air Temperature             = 16.333
+   **   ~~~   ** ... Heating Minimum Outdoor Unit Inlet Temperature = -19.999
+   **   ~~~   ** ... Heating Maximum Outdoor Unit Inlet Temperature = 16.000
+   **   ~~~   ** ... Check VRF Heat Pump Min/Max Outdoor Temperature in Heating Mode limits.
+   **   ~~~   **  During Warmup, Environment=CUSTOMRUN, at Simulation time=01/01 17:07 - 17:08
+   ** Warning ** Processing Monthly Tabular Reports: Variable names not valid for this simulation
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual variables.
+   ** Warning ** AirConditioner:VariableRefrigerantFlow "VRF_1_ZONE1 VRF HEAT PUMP".
+   **   ~~~   ** ...InitVRF: VRF Heat Pump Min/Max Operating Temperature in Heating Mode Limits have been exceeded and VRF system is disabled.
+   **   ~~~   ** ... Outdoor Unit Inlet Air Temperature             = 17.033
+   **   ~~~   ** ... Heating Minimum Outdoor Unit Inlet Temperature = -19.999
+   **   ~~~   ** ... Heating Maximum Outdoor Unit Inlet Temperature = 16.000
+   **   ~~~   ** ... Check VRF Heat Pump Min/Max Outdoor Temperature in Heating Mode limits.
+   **   ~~~   **  Environment=CUSTOMRUN, at Simulation time=03/04 19:10 - 19:20
+   ************* Simulation Error Summary *************
+   ************* There are 17 unused schedules in input.
+   ************* There are 17 unused week schedules in input.
+   ************* There are 81 unused day schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** AirConditioner:VariableRefrigerantFlow "VRF_0_ZONE1 VRF HEAT PUMP" -- Exceeded VRF Heat Pump min/max heating temperature limit error continues...
+   *************  **   ~~~   **   This error occurred 15974 total times;
+   *************  **   ~~~   **   during Warmup 372 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=28.683333  Min=16.
+   *************
+   *************  ** Warning ** AirConditioner:VariableRefrigerantFlow "VRF_0_ZONE2 VRF HEAT PUMP" -- Exceeded VRF Heat Pump min/max heating temperature limit error continues...
+   *************  **   ~~~   **   This error occurred 12056 total times;
+   *************  **   ~~~   **   during Warmup 216 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=26.65  Min=16.016667
+   *************
+   *************  ** Warning ** AirConditioner:VariableRefrigerantFlow "VRF_1_ZONE1 VRF HEAT PUMP" -- Exceeded VRF Heat Pump min/max heating temperature limit error continues...
+   *************  **   ~~~   **   This error occurred 4536 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=21.233333  Min=16.016667
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 19 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 32586 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 10.08sec
