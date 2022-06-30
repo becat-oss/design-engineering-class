@@ -6,7 +6,7 @@ pandasで使用するデータとして、建物のエネルギーシミュレ�
 
 BAUES Analysisとは？  
 設計における決定が建物のエネルギー性能にどう影響するのかをより手軽に確認できる  
-![BAUES Analysis説明](./img/japan_energy_consumption.png)  
+![BAUES Analysis説明](./img/baues_analysis_top.png)  
 
 なぜエネルギー？  
 40%のエネルギー消費量消費量が建物起因  
