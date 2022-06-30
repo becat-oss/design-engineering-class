@@ -33,6 +33,16 @@ cd design-engineering-class/class11_pandas2
 jupyter notebook  
 ```   
 
+最終課題  
+自分なりのテーマを持って、環境データに関して分析をしてみてください。  
+そのときに以下のツールのうちどれかを使用してください。（複数組み合わせて使うのももちろんありです）  
+- climateStudio  
+- Ladybug&Honeybee  
+- BAUES Analysis  
+- pandas  
+- matplotlib/seaborn    
+次の授業までに自分なりのテーマを持って1分くらいで発表してください。
+
 参照  
 [Pandas](https://pandas.pydata.org/)\
 Excelでデータを扱うように、データ処理を行えるライブラリです  

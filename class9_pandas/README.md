@@ -8,6 +8,10 @@
 湿り空気線図上に全気象データをプロットするだけでなく、passive designの効果を定量的に分析することができます。  
 ![psychrometric chart](./img/psychrometric_chart.png)  
 
+[注意点]  
+passive designが効果を発揮する時間の割合を表示しているだけで、その時間帯が快適になるわけでは必ずしもないことを頭に入れてください。また、下図にあるように、日射量や風速など湿り空気線図に表示されないパラメータがあることもポイントです。comfort modelを選んだ次の画面で表示される前提条件を読み込むのがおすすめです    
+![前提条件](./img/conditions2.png)  
+
 #### jupyter notebookを用いて、Python、pandasを使ってみる
 epwデータの分析を以下のような可視化をしながら分析します  
 ![monthly wind rose](./img/windrose.png)
