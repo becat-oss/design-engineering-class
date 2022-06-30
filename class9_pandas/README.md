@@ -35,13 +35,13 @@ cd design-engineering-class/class9_pandas
 
 1-4. Anaconda Prompt以下のコマンドで今回のデモ用の環境を構築する
 ```
-conda create -n class9_pandas --file pandas_env.txt
+conda env create -f=pandas_env.yml
 ```
 
 1-5. 以下のコマンドで2-3で作成した環境に入る
 
 ```
-activate class9_pandas
+activate pandas
 ```
 
 2. jupyter notebookを以下のコマンドで起動
