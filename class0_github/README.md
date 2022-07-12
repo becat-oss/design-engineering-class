@@ -40,6 +40,14 @@ githubにあるプログラムを使うだけの人も、プログラムを編�
 
 sourcetreeのインストール、環境設定方法は[こちらのページ](https://tracpath.com/bootcamp/learning_git_sourcetree.html)とかが参照できると思います。  
 
+step1. githubのレポジトリを登録する  
+step2. プログラムをpullする（データをPCにダウンロードする）  
+step3. 新しいブランチを作成する  
+step4. プログラムを新しいブランチで作成、編集する  
+step5. githubのレポジトリにpushする  
+step6. レポジトリのオーナーにpull requestを出す  
+ 
+
 
 
 
