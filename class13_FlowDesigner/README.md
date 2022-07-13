@@ -1,12 +1,16 @@
 ### デザインエンジニアリング特論第13回 FlowDesignerについて  
 
 #### CFDの基本的な情報説明  
+[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=WoiIEf70N6w)  
 
-#### 風解析  
+#### 実際に使ってみる  
+[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=ALyo78mboBM)  
 
-#### 熱解析  
-前研究室のYouTubeを使う  
+#### 解析条件の違いによる影響  
+[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=T-ZjrcN4G0Q) 
 
+#### 暖房方式による温熱環境の違い  
+[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=UfaVx72fb6E) 
 
 #### Q&A  
 Q. 風圧係数をだす場合の基準風速はどのような基準で与えれば良いでしょうか？  
@@ -24,4 +28,7 @@ A. 定常計算と非定常計算はそもそも計算している目的が違�
 
 Q. 壁体の断熱性能のモデリングはどの程度行えるのか、例えば、外断熱・内断熱の違いや熱的おくれ等を再現できるのか。  
 A. 僕の理解では、CFDは流体内での
-Q. 使用者が知識をしっかり持っておくことが大事だと思うが、FlowDesignerでは、使いやすさと結果の妥当性の判断のしやすさは両立しているのか。FlowDesignerがとてもUIに長けていて環境工学の知識の希薄な人でも使いやすいなと感じたので余計気になった。
+Q. 使用者が知識をしっかり持っておくことが大事だと思うが、FlowDesignerでは、使いやすさと結果の妥当性の判断のしやすさは両立しているのか。FlowDesignerがとてもUIに長けていて環境工学の知識の希薄な人でも使いやすいなと感じたので余計気になった。  
+
+#### 参考資料  
+[住宅を対象としたエアコン暖房時の温熱環境・熱負荷削減効果のCFD検討](https://www.youtube.com/watch?v=ldajpv-Ba44)  
