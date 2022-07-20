@@ -1,19 +1,18 @@
-### デザインエンジニアリング特論第13回 FlowDesignerについて  
-FlowDesignerの習熟度について聞く  
-
-風に関する検討
+### デザインエンジニアリング特論第13,14回 FlowDesignerについて  
 
 #### CFDの基本的な情報説明  
 [東京大学前研究室のYouTube](https://www.youtube.com/watch?v=WoiIEf70N6w)  
 
 #### 実際に使ってみる  
-[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=ALyo78mboBM)  
+[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=6alrb4SeTDg)  
 
 #### 解析条件の違いによる影響  
-[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=T-ZjrcN4G0Q) 
+[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=sYDXqA8bxuI) 
 
 #### 暖房方式による温熱環境の違い  
-[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=UfaVx72fb6E) 
+[東京大学前研究室のYouTube](https://www.youtube.com/watch?v=bhdMBrsySwk) 
+
+
 
 #### Q&A  
 Q. CFDのほとんどの場合は定常解析で解析すると聞いたことがありますが、日射による蓄熱やその輻射の効果を時間ごとに見たいとき（例えばダイレクトゲインの効果をスタディしたい場合）どうしても非定常で解析を行ったほうが良い場合もでてきます。こうした状況で定常で解析する方法はありますか？また非定常で行う場合は注意点を教えてください。（例えば「ル・コルビジェの住宅と熱のかたち」では計算を安定させるため3日分の解析をまわして最後の３日目の結果を参照していました。また計算の時間間隔も今は根拠なしで行っているのでなにか参照できるものがあれば）  
